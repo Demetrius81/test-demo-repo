@@ -1,0 +1,36 @@
+.info {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+
+	&__box {
+		max-width: 768px;
+		border: 1px solid #1adf00;
+		border-radius: 5px;
+		padding: 40px 40px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-flow: column;
+		gap: 20px;
+	}
+
+	&__header {
+		font-size: 3rem;
+	}
+
+	&__about {
+		font-size: 1.6rem;
+	}
+
+	&__link {
+		font-size: 1.6rem;
+		text-decoration: none;
+		color: #1adf00;
+	}
+
+	&__button {
+		font-size: 1.6rem;
+	}
+}

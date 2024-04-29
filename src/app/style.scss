@@ -1,0 +1,58 @@
+#app {
+	font-family: "Roboto-medium", sans-serif;
+	background: transparent;
+	color: #1adf00;
+	background: #000;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100vw;
+	position: relative;
+}
+
+span {
+	cursor: default;
+}
+
+.interactive {
+	cursor: pointer;
+	transition: text-shadow 0.3s ease;
+
+	@media (hover: hover) {
+		&:hover {
+			text-shadow:
+				0 0 5px #fff,
+				0 0 10px #fff,
+				0 0 15px #fff,
+				0 0 20px #1adf00,
+				0 0 30px #1adf00,
+				-26px 12px 9px rgba(206, 89, 55, 0);
+		}
+	}
+	@media (hover: none) {
+		&:active {
+			background-color: #117a0060;
+			text-shadow:
+				0 0 5px #fff,
+				0 0 10px #fff,
+				0 0 15px #fff,
+				0 0 20px #1adf00,
+				0 0 30px #1adf00,
+				-26px 12px 9px rgba(206, 89, 55, 0);
+		}
+	}
+}
+
+.offline {
+	opacity: 0.4 !important;
+}
+
+.online {
+	opacity: 1 !important;
+}
+
+.hidden {
+	display: none !important;
+}

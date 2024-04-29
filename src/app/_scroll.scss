@@ -1,0 +1,22 @@
+/* Firefox */
+* {
+	scrollbar-width: thin;
+	scrollbar-color: #1adf00 #1adf005b;
+}
+
+/* Chrome, Edge и Safari */
+*::-webkit-scrollbar {
+	width: 6px;
+	height: 10px;
+	background-color: #143861;
+}
+
+*::-webkit-scrollbar-track {
+	background: #1adf005b;
+}
+
+*::-webkit-scrollbar-thumb {
+	background-color: #1adf00;
+	border-radius: 3px;
+	border: 1px solid;
+}

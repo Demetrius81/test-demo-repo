@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="../src/assets/img/chat-4-16.png" type="image/x-icon">
+    </head>
+    <body>
+        <div id="app">
+            <div class="error">
+                <div class="error__wrapper">
+                    <label class="error__text">WRONGGG!!!</label>
+                    <button type="button" class="error__button button">Ok</button>
+                </div>
+            </div>
+            <form class="login hidden">
+                <fieldset class="login__fields-box">
+                    <legend>Authorization</legend>
+                    <div class="login__input-box">
+                        <label>Name</label>
+                        <div class="login__input-container">
+                            <input
+                                id="neme"
+                                class="login__text-box text-input"
+                                placeholder="Enter your name"
+                                type="text"
+                            >
+                        </div>
+                    </div>
+                    <div class="login__input-box">
+                        <label>Password</label>
+                        <div class="login__input-containeri">
+                            <input
+                                id="password"
+                                class="login__text-box text-input"
+                                placeholder="Enter password"
+                                type="password"
+                            >
+                        </div>
+                    </div>
+                </fieldset>
+                <button type="submit" class="login__button button disabled" disabled="disabled">Login</button>
+                <button type="button" class="login__button button enabled">Info</button>
+            </form>
+            <main class="main">
+                <header class="header main__header">
+                    <div class="header__info">
+                        <div>Fun Chat</div>
+                        <div>
+                            <span>User:</span>
+                            <span>AAAAAA</span>
+                        </div>
+                    </div>
+                    <button type="button" class="header__button button enabled">Logout</button>
+                    <button type="button" class="header__button button enabled">Info</button>
+                </header>
+                <section class="main__content content">
+                    <aside class="content__contacts contacts">
+                        <input class="contacts__input text-input" placeholder="Find ->">
+                        <ul class="contacts__users">
+                            <li class="user" data-id="AF345" data-status="online">
+                                <span class="user__name interactive">PanRaman</span>
+                                <span class="user__msg-count">5</span>
+                            </li>
+                            <li class="user" data-id="AF345" data-status="offline">
+                                <span class="user__name offline">Demofg</span>
+                                <span class="user__msg-count hidden">0</span>
+                            </li>
+                        </ul>
+                    </aside>
+                    <!-- -article (selected user, messages, textarea to send new message) -->
+                    <article class="content__dialog dialog">
+                        <article class="dialog__header">
+                            <span class="dialog__user-name">SomeUser</span>
+                            <span class="dialog__user-status offline">offline</span>
+                        </article>
+                        <article class="dialog__messages">
+                            <!-- dialog msg-box -->
+                            <!-- --------------------- -->
+                            <div class="message message_accepted" data-time="123564">
+                                <div class="message__box">
+                                    <div class="message__header">
+                                        <span class="message__sender">SenderName</span>
+                                        <span class="message__date">01.01.1970, 12:20:20</span>
+                                    </div>
+                                    <div class="message__text">TextMessage</div>
+                                    <div class="message__footer">
+                                        <span class="message__status"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- --------------------- -->
+                            <div class="history-delimier dialog__history-delimier">
+                                <label class="history-delimier__history-text">New Messages</label>
+                            </div>
+                            <!-- --------------------- -->
+                            <div class="message message_transmitted" data-time="123564">
+                                <div class="message__box">
+                                    <div class="message__header">
+                                        <span class="message__sender">You</span>
+                                        <span class="message__date">01.01.1970, 12:20:20</span>
+                                    </div>
+                                    <div class="message__text">TextMessage</div>
+                                    <div class="message__footer">
+                                        <span class="message__status">delivered / read / accepted</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- --------------------- -->
+                            <ul class="context-menu dialog__context-menu hidden">
+                                <li class="context-menu__menu-item change">Change</li>
+                                <li class="context-menu__menu-item delete">Delete</li>
+                            </ul>
+                            <!-- --------------------- -->
+                        </article>
+                        <form class="dialog__input-box">
+                            <input
+                                id="dialog-input"
+                                class="dialog__input text-input"
+                                placeholder="Message..."
+                                value=""
+                            >
+                            <span class="dialog__cancel">X</span>
+                            <button type="submit" class="dialog__input-button button enabled">Send</button>
+                        </form>
+                    </article>
+                </section>
+                <footer class="footer main__footer">
+                    <div class="footer__text">
+                        <span>&#169;</span>
+                        <span id="my-link" class="interactive">Dzmitry Ryzhou</span>
+                        <span>2024</span>
+                    </div>
+                    <img src="../src/assets/img/rss.svg" alt="RSSchool logo" class="footer__logo">
+                </footer>
+            </main>
+            <section class="info">
+                <h1 class="info__header">Fun Chat</h1>
+                <p class="info__descroption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nam commodi quia ipsam provident sint earum voluptate accusantium quisquam temporibus?</p>
+                <a class="info__link" href="https://github.com/Demetrius81">Author Dzmitry Ryzhou</a>
+                <button class="info__button button enabled">Back</button>
+            </section>
+        </div>
+    </body>
+</html>

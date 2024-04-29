@@ -1,0 +1,51 @@
+.button {
+	cursor: pointer;
+	min-width: 18px;
+	padding: 5px 15px;
+	border: #1adf00 1px solid;
+	border-radius: 5px;
+	color: #1adf00;
+	background: transparent;
+	font-size: 1rem;
+}
+
+.disabled {
+	cursor: default;
+	opacity: 0.5;
+	transition: opacity 0.3s ease;
+}
+
+.enabled {
+	cursor: pointer;
+	opacity: 1;
+	transition:
+		opacity 0.3s ease,
+		text-shadow 0.3s ease;
+
+	@media (hover: hover) {
+		&:active {
+			background-color: #117a0060;
+		}
+		&:hover {
+			text-shadow:
+				0 0 5px #fff,
+				0 0 10px #fff,
+				0 0 15px #fff,
+				0 0 20px #1adf00,
+				0 0 30px #1adf00,
+				-26px 12px 9px rgba(206, 89, 55, 0);
+		}
+	}
+	@media (hover: none) {
+		&:active {
+			background-color: #117a0060;
+			text-shadow:
+				0 0 5px #fff,
+				0 0 10px #fff,
+				0 0 15px #fff,
+				0 0 20px #1adf00,
+				0 0 30px #1adf00,
+				-26px 12px 9px rgba(206, 89, 55, 0);
+		}
+	}
+}

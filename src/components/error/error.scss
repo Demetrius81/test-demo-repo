@@ -1,0 +1,45 @@
+.error {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column;
+	gap: 20px;
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #000000af;
+
+	&__wrapper {
+		display: grid;
+		grid-template-columns: 240px;
+		grid-template-rows: auto auto;
+		justify-items: center;
+		align-items: center;
+		gap: 20px;
+		padding: 20px 40px;
+		border: #1adf00 1px solid;
+		border-radius: 5px;
+		background: #000;
+		z-index: 2;
+	}
+
+	&__text {
+		text-align: center;
+		font-size: 2rem;
+		color: #1adf00;
+		background: transparent;
+	}
+
+	&__button {
+		padding: 5px 20px;
+		font-size: 2rem;
+	}
+}
+
+@keyframes spinner-plncf9 {
+	100% {
+		transform: rotate(1turn);
+	}
+}

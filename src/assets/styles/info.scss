@@ -1,0 +1,22 @@
+.info {
+	display: flex;
+	align-items: center;
+	flex-flow: column;
+	min-width: 300px;
+	margin: 0 auto;
+	padding: 1%;
+	border: 1px solid;
+	border-radius: 5px;
+
+	&__header {
+	}
+
+	&__descroption {
+	}
+
+	&__link {
+	}
+
+	&__button {
+	}
+}

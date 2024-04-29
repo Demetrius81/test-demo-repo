@@ -1,0 +1,18 @@
+.footer {
+	font-size: 1.6rem;
+	display: flex;
+	flex-flow: row;
+	align-items: center;
+	justify-content: space-around;
+	height: 10svh;
+	min-height: 45px;
+	max-height: 55px;
+	width: 100%;
+	margin: 1% 0%;
+	border: 1px solid;
+	border-radius: 5px;
+
+	&__logo {
+		height: 3rem;
+	}
+}

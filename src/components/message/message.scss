@@ -1,0 +1,52 @@
+.message {
+	display: flex;
+	flex-flow: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	width: 100%;
+	margin: 1% 0%;
+
+	&__box {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		flex-flow: column;
+		width: 60%;
+		padding: 1%;
+
+		background: #1adf0042;
+		border-radius: 5px;
+	}
+
+	&__header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-flow: row wrap;
+		width: 80%;
+		font-size: 1rem;
+	}
+
+	&__text {
+		width: 100%;
+		margin: 2% 0% 0% 0%;
+		padding: 3%;
+		box-sizing: border-box;
+		text-align: justify;
+		border-radius: 5px;
+		background: #000;
+	}
+
+	&_accepted {
+		cursor: default;
+		align-items: flex-start;
+	}
+
+	&_transmitted {
+		& div > div > span {
+			cursor: pointer;
+		}
+		cursor: pointer;
+		align-items: flex-end;
+	}
+}
